@@ -1,12 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
+const glob = require('glob');
 
 module.exports = {
     mode: "development",
-    entry: [
-        './src/hello-world.ts',
-        './src/test.ts'
-    ],
+    entry: glob.sync('./src/**/*.+(js|ts)'), // get all js and ts files in src
     module: {
         rules: [
             {
