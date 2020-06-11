@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -119,15 +119,37 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 
 /***/ }),
 
-/***/ "./src/index.ts":
-/*!**********************!*\
-  !*** ./src/index.ts ***!
-  \**********************/
+/***/ "./src/hello-world.ts":
+/*!****************************!*\
+  !*** ./src/hello-world.ts ***!
+  \****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\r\n// CloudScript (JavaScript)\r\nhandlers.helloWorld = function (args, context) {\r\n    log.debug(Object(lodash__WEBPACK_IMPORTED_MODULE_0__[\"isEmpty\"])({}).toString());\r\n    const message = \"Hello TESTING THAT BUILD YO CALEB OR ARE YOU?????? \" + currentPlayerId + \"!\";\r\n    log.info(message);\r\n    let inputValue = null;\r\n    if (args && args.hasOwnProperty(\"inputValue\"))\r\n        inputValue = args.inputValue;\r\n    log.debug(\"hello CALEB OR ME???:\", { input: inputValue });\r\n    return { messageValue: message };\r\n};\r\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\r\n// CloudScript (JavaScript)\r\nhandlers.helloWorld = function (args, context) {\r\n    log.debug(Object(lodash__WEBPACK_IMPORTED_MODULE_0__[\"isEmpty\"])({}).toString());\r\n    const message = \"Hello TESTING THAT BUILD YO CALEB OR ARE YOU?????? \" + currentPlayerId + \"!\";\r\n    log.info(message);\r\n    let inputValue = null;\r\n    if (args && args.hasOwnProperty(\"inputValue\"))\r\n        inputValue = args.inputValue;\r\n    log.debug(\"hello CALEB OR ME???:\", { input: inputValue });\r\n    return { messageValue: message };\r\n};\r\n\n\n//# sourceURL=webpack:///./src/hello-world.ts?");
+
+/***/ }),
+
+/***/ "./src/test.ts":
+/*!*********************!*\
+  !*** ./src/test.ts ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("handlers.aNewTest = (args, context) => {\r\n    return { messageValue: 'This is a test message of your system.', also: [...[1, 2, 3], ...[4, 5, 6]] };\r\n};\r\n\n\n//# sourceURL=webpack:///./src/test.ts?");
+
+/***/ }),
+
+/***/ 0:
+/*!************************************************!*\
+  !*** multi ./src/hello-world.ts ./src/test.ts ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./src/hello-world.ts */\"./src/hello-world.ts\");\nmodule.exports = __webpack_require__(/*! ./src/test.ts */\"./src/test.ts\");\n\n\n//# sourceURL=webpack:///multi_./src/hello-world.ts_./src/test.ts?");
 
 /***/ })
 

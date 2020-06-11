@@ -3,7 +3,10 @@ const path = require('path');
 
 module.exports = {
     mode: "development",
-    entry: './src/index.ts',
+    entry: [
+        './src/hello-world.ts',
+        './src/test.ts'
+    ],
     module: {
         rules: [
             {
