@@ -1,19 +1,21 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/",
+//        "outDir": "./dist/",
         "noImplicitAny": true,
         "module": "es6",
         "target": "es6",
         "allowJs": true,
-        "typeRoots": ["./node_modules/@types"]
+        "typeRoots": [
+            "./node_modules/@types"
+        ]
     },
     "files": [
         "./node_modules/playfab-cloudscriptexample/Scripts/typings/PlayFab/CloudScript.d.ts",
         "./node_modules/playfab-cloudscriptexample/Scripts/typings/PlayFab/PlayStream.d.ts"
     ],
     "include": [
-        "node_modules/lodash.isempty",
-        "src/**/*"
+        "./node_modules/lodash",
+        "./src/**/*"
     ],
     "exclude": [
         "**/*.spec.ts"
