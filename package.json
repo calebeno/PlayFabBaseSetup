@@ -17,6 +17,15 @@
   },
   "homepage": "https://github.com/calebeno/playFabTest#readme",
   "dependencies": {
+    "@types/lodash": "^4.14.155",
+    "lodash": "^4.17.15",
     "lodash.isempty": "^4.4.0"
+  },
+  "devDependencies": {
+    "playfab-cloudscriptexample": "github:PlayFab/SdkTestingCloudScript#master",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   }
 }
